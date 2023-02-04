@@ -1,0 +1,107 @@
+@font-face {
+    font-family: "OpenSans";
+    font-style: bold;
+    font-weight: 700;
+    /* Браузер сначала попробует найти шрифт локально */
+    src: local("OpenSans"),
+         url("fonts/OpenSans-Bold.woff2") format("woff2"),
+         url("fonts/OpenSans-Bold.woff") format("woff");
+  }
+  @font-face {
+    font-family: "OpenSans";
+    font-style: regular;
+    font-weight: 400;
+    /* Браузер сначала попробует найти шрифт локально */
+    src: local("OpenSans"),
+         url("fonts/OpenSans-Regular.woff2") format("woff2"),
+         url("fonts/OpenSans-Regular.woff") format("woff");
+  }
+
+body {
+    width: 100vw;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header {
+    flex-basis: 100%;
+    height: 450px;
+    display: flex;
+    background: #000;
+    background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/banner-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 1;
+    
+}
+
+
+.header:before {
+	content: '';
+	display: block;
+	width: 100%;
+	height: 450px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color:rgba(0, 0, 0, .5);
+}
+
+.nav_container {
+    width: 30%;
+	height: 5%;
+    display: flex;
+    position: absolute;
+    justify-content: space-around;
+    top: 0;
+    right: 10%;
+    margin-top: 2%;
+}
+
+.nav_elem {
+    display: block;
+    flex-basis: 90% / 6;
+    color: white;
+    outline: none;
+    text-decoration: none;
+}
+
+a {
+    color: white;
+    outline: none;
+    text-decoration: none;
+}
+
+.title {
+    width: 40%;
+    text-align: center;
+    font-size: 3rem;
+    margin: auto;
+    font-variant: small-caps;
+    color: white;
+    font-weight: 600;
+    z-index: 1;
+}
+
+.main {
+    flex-basis: 70%;
+    height: 100vh;
+    background-color: blueviolet;
+}
+
+.section {
+    margin-left: 10%;
+
+}
+
+.aside {
+    flex-basis: 30%;
+    height: 100vh;
+    background-color: red;
+}
+                  
